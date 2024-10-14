@@ -9,5 +9,5 @@ all: $(BIN)
 run: all
 	$(BIN)
 
-$(BIN): $(SRC_DIR)/*.cpp $(SRC_DIR)/*.hpp
-	g++ -Wpedantic -o $(BIN) $(SRC_DIR)/*.cpp
+$(BIN): $(SRC_DIR)/*.cpp $(SRC_DIR)/*.hpp $(SRC_DIR)/*.c $(SRC_DIR)/*.h
+	g++ -Wpedantic -o $(BIN) $(SRC_DIR)/*.cpp $(SRC_DIR)/*.c

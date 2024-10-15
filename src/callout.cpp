@@ -1,6 +1,7 @@
 /* callout.cpp */
 
 #include "callout.hpp"
+#include <boost/asio.hpp>
 #include <iostream>
 
 void callout(const int count) {

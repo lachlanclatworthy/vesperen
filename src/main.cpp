@@ -4,8 +4,9 @@
 #include "socketed.h"
 
 int main() {
-    callout(200);
-    socketedDemo();
+    for (int i = 0; i < 10; i++) {
+        callTheBirds(i);
+    }
 
     return 0;
 }

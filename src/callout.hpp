@@ -3,6 +3,9 @@
 #ifndef CALLOUT_H
 #define CALLOUT_H
 
-void callout(const int count);
+#include <cstdlib>
+
+void callout(const size_t count);
+void callTheBirds(const size_t count);
 
 #endif // CALLOUT_H

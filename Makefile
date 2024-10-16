@@ -1,11 +1,11 @@
 PROJECT := vesperen
 CXX := g++
-CXXFLAGS := -O2 -Wpedantic
+CXXFLAGS := -std=gnu++17 -O2 -Wpedantic
 
-BUILD_DIR := ./build
+BUILD_DIR := build
 SRC_DIR := ./src
 SRC := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/*.c $(SRC_DIR)/*.hpp  $(SRC_DIR)/*.h)
-TEST_DIR := ./test
+TEST_DIR := test
 TEST_SRC := $(wildcard $(TEST_DIR)/*.cpp $(TEST_DIR)/*.c $(TEST_DIR)/*.hpp  $(TEST_DIR)/*.h)
 BIN := ./$(BUILD_DIR)/$(PROJECT)
 TEST_BIN := ./$(BUILD_DIR)/$(PROJECT)_test
